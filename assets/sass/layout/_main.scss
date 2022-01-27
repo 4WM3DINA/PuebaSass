@@ -1,0 +1,200 @@
+.engranaje {
+    -webkit-animation: rotar 3s linear infinite;
+    -webkit-transform-origin: 55%;
+    -ms-transform-origin: 55%;
+    animation: rotar 3s linear infinite;
+    transform-origin: 56%;
+    transform-box: fill-box;
+}
+  
+@-webkit-keyframes rotar {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+  
+@keyframes rotar {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+}
+  
+  /* Corchetes en mov */
+.corchetes {
+    -webkit-animation: horizontal 2s ease-in-out infinite;
+    -webkit-animation-direction: alternate;
+    animation: horizontal 2s ease-in-out infinite;
+    animation-direction: alternate;
+}
+  
+@-webkit-keyframes horizontal {
+    0% {
+      -webkit-transform: translate(150px, 0px);
+      transform: translate(150px, 0px);
+    }
+  
+    100% {
+      -webkit-transform: translate(150, 0);
+      transform: translate(150, 0);
+    }
+}
+  
+@keyframes  horizontal{
+    0% {
+      -webkit-transform: translate(150px, 0px);
+      transform: translate(150px, 0px);
+    }
+  
+    100% {
+      -webkit-transform: translate(150, 0);
+      transform: translate(150, 0);
+    }
+}
+
+.banner-container{
+    display:flex;
+    justify-content:center;
+}
+
+.section{
+    padding: 10px;
+}
+
+.section-one{
+    border: 1px solid $black;
+    padding: 5px;
+    margin: 5px;
+
+    &__card{
+        display: flex;
+        justify-content:center;
+    }
+}
+
+.card{
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:#fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 5px;
+    margin-bottom: 10px;
+
+    p{
+        font-family: $poppins;
+        font-weight: $poppins-regular;
+        font-size: $small;
+    }
+    &__body{
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        min-height: 1px;
+    }
+    &__title{
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        font-size: $large;
+        margin-bottom:0.75rem;
+        margin: 0 0.5rem;
+    }
+    &__text{
+        font-family: $poppins;
+        font-weight: $poppins-regular;
+        font-size: $small;
+        text-align: justify;
+        margin: 0 0.5rem;
+    }
+}
+
+.section-two{
+    border: 1px solid $black;
+    padding: 5px;
+    margin: 5px 0.5rem;
+    display:flex;
+    justify-content:center;
+    text-align: justify;
+
+    &__titulo{
+        text-align: center;
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        font-size: $medium;
+    }
+
+    &__img img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 1px solid $black;
+        display: block;
+        margin:auto;
+    }
+
+    &__redes{
+        text-align:center;
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        font-size: $small;
+        span{
+            margin: 0 0.2rem;
+        }
+    }
+
+    &__texto{
+        font-family: $poppins;
+        font-weight: $poppins-regular;
+        margin: 0 0.5rem;
+    }
+
+    &__cursos{
+        text-align: center;
+        color:$white;
+        font-family: $poppins;
+        font-weight: $poppins-bold;
+        font-size: $large;
+        background-color: $grey;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+    }
+
+    &__list{ 
+
+        margin-top:1rem;
+
+        ul{
+            list-style: circle;
+            margin: 0 3rem;
+        }
+        li  a {
+            color: #8c20d4;
+        }
+
+        li a:hover{
+            text-decoration: underline;
+        }
+    }
+    svg{
+        display: block;
+        margin:auto;
+        height: 400px;
+        width: 400px;
+    }
+}
